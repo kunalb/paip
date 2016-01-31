@@ -1,7 +1,12 @@
 (ns paip.core
+  (:require [clojure.test :refer [run-tests]]
+            [paip.ch1])
   (:gen-class))
 
+;;; TODO: Make this automatically run all chapters' tests
+;;;       without explicitly importing each namespace.
+
 (defn -main
-  "I don't do a whole lot ... yet."
+  "Run ALL the tests"
   [& args]
-  (println "Hello, World!"))
+  (run-tests 'paip.ch1))
