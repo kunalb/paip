@@ -1,6 +1,7 @@
 (ns paip.core
   (:require [clojure.test :refer [run-tests]]
-            [paip.ch1])
+            [paip.ch1]
+            [paip.ch2])
   (:gen-class))
 
 ;;; TODO: Make this automatically run all chapters' tests
@@ -9,4 +10,5 @@
 (defn -main
   "Run ALL the tests"
   [& args]
-  (run-tests 'paip.ch1))
+  (run-tests 'paip.ch1
+             'paip.ch2))
